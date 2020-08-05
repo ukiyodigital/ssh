@@ -1,8 +1,9 @@
 ---
 kind: pipeline
 type: docker
-name: Test API / UI
+name: Build
 
+steps:
 - name: Build Image
   image: plugins/docker
   settings:
