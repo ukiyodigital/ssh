@@ -1,0 +1,14 @@
+---
+kind: pipeline
+type: docker
+name: Test API / UI
+
+- name: Build Image
+  image: plugins/docker
+  settings:
+    repo: floatcms/ssh
+    auto_tag: true
+    username:
+      from_secret: username
+    password:
+      from_secret: password
