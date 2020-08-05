@@ -12,3 +12,9 @@ name: Test API / UI
       from_secret: username
     password:
       from_secret: password
+
+trigger:
+  branch:
+      - master
+  event:
+      - push
