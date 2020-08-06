@@ -10,9 +10,9 @@ steps:
     repo: floatcms/ssh
     auto_tag: true
     username:
-      from_secret: username
+      from_secret: docker_username
     password:
-      from_secret: password
+      from_secret: docker_token
 
 trigger:
   branch:
